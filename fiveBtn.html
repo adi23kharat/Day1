@@ -4,9 +4,15 @@
     <title>Cart Quantity</title>
   </head>
   <body>
+
     <button onclick="
-      console.log(`Cart quantity: ${cartQuantity}`);
+      document.getElementById('par').innerHTML = cartQuantity;
     ">Show Quantity</button>
+
+
+    <!-- <button onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+    ">Show Quantity</button> -->
 
     <button onclick="
       cartQuantity++;
@@ -46,6 +52,9 @@
       console.log(`Cart quantity: ${cartQuantity}`);
     ">Reset Cart</button>
 
+  <p id="par">
+
+  </p>
     <script>
       let cartQuantity = 0;
     </script>
